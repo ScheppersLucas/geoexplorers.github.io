@@ -1,28 +1,12 @@
-.frame {
-  background-color: #3e3e3e;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  width: 100vw;
+.card {
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  backdrop-filter: blur(10px);          /* blurs whatever is behind */
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.frame .div {
-  background-color: #3e3e3e;
-  width: 827px;
-  height: var(--responsive-device-width);
-}
-.frame {
-  background-color: #3e3e3e;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  width: 100vw;
-  min-height: 100vh;
-}
-
-.frame .div {
-  background-color: #3e3e3e;
-  max-width: 827px;
-  width: 100%;
-  height: var(--responsive-device-width);
+.card:hover {
+  transform: translateY(-10px);        /* moves up when hovered */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
