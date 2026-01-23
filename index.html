@@ -2,121 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geo Explorers</title>
+
   <style>
-    html, body {
+    /* Base (phone first) */
+    body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
       background-color: #383838;
       color: #f0f0f0;
     }
 
-    /* Top banner */
+    /* Banner */
     .banner {
-      background-color: #d8c9a3; /* sand color */
+      background-color: #d8c9a3; /* sand */
       color: #2b2b2b;
-      padding: 40px;
+      padding: 30px 20px;
       text-align: center;
     }
 
     .banner h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 1.8rem;
     }
 
-    /* Main content */
+    .banner p {
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+
+    /* Content */
     .content {
-      padding: 60px 10%;
+      padding: 30px 20px;
     }
 
     /* Description section */
     .description {
       display: flex;
-      gap: 40px;
-      align-items: center;
-      margin-bottom: 80px;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    .description-text {
-      flex: 1;
+    .photo-placeholder {
+      width: 100%;
+      height: 200px;
+      background-color: #555;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ddd;
+      font-size: 1rem;
     }
 
     .description-text h2 {
       margin-top: 0;
-      color: #ffffff;
+      font-size: 1.4rem;
     }
 
     .description-text p {
       line-height: 1.6;
       color: #cccccc;
-    }
-
-    /* Image placeholder */
-    .photo-placeholder {
-      flex: 1;
-      height: 250px;
-      background-color: #555;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ddd;
-      font-size: 1.1rem;
-      border-radius: 8px;
+      margin-bottom: 0;
     }
 
     /* Contact section */
     .contact {
       background-color: #2f2f2f;
-      padding: 50px 10%;
+      padding: 30px 20px;
+      margin-top: 40px;
     }
 
     .contact h2 {
       margin-top: 0;
-      color: #ffffff;
+      font-size: 1.4rem;
     }
 
     .contact p {
+      margin: 8px 0;
       color: #cccccc;
-      margin-bottom: 10px;
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
+    /* Desktop enhancement */
+    @media (min-width: 768px) {
       .description {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .photo-placeholder {
+        height: 260px;
+      }
+
+      .content,
+      .contact {
+        padding: 50px 10%;
+      }
+
+      .banner h1 {
+        font-size: 2.4rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="banner">
-    <h1>Team Geo Explorers</h1>
-    <p>We are a LEGO League team that collaborates, innovates, and solves real-world problems through creativity and engineering</p>
-  </div>
+  <header class="banner">
+    <h1>team Geo Explorers</h1>
+    <p>We are a LEGO League team that collaborates, innovates, and solves real-world problems through creativity and engineering.</p>
+  </header>
 
-  <div class="content">
+  <main class="content">
     <section class="description">
+      <div class="photo-placeholder">
+        Team Photo
+      </div>
+
       <div class="description-text">
         <h2>About Us</h2>
         <p>
-          This is a description section where you can talk about your business,
-          project, or idea. There is space for text here and a photo beside it,
-          making it perfect for introductions or explanations.
+          We are a LEGO League team that collaborates, innovates, and solves
+          real-world problems through creativity and engineering.
         </p>
       </div>
-
-      <div class="photo-placeholder">
-        Photo goes here
-      </div>
     </section>
-  </div>
+  </main>
 
   <footer class="contact">
     <h2>Contact Us</h2>
-    <p>Email: example@email.com</p>
-    <p>Phone: +1 234 567 890</p>
+    <p>Email: team@example.com</p>
+    <p>School / Organization Name</p>
   </footer>
 
 </body>
