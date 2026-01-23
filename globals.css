@@ -1,22 +1,18 @@
-/* globals.css */
-
-/* Reset default browser spacing */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 * {
-  margin: 0;
-  padding: 0;
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
-/* Set a default font */
+html,
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+  margin: 0px;
+  height: 100%;
 }
-
-/* Make images and divs responsive */
-img {
-  max-width: 100%;
-  height: auto;
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
 }
