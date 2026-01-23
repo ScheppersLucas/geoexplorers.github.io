@@ -11,3 +11,18 @@
   width: 827px;
   height: var(--responsive-device-width);
 }
+.frame {
+  background-color: #3e3e3e;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.frame .div {
+  background-color: #3e3e3e;
+  max-width: 827px;
+  width: 100%;
+  height: var(--responsive-device-width);
+}
