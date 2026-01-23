@@ -1,3 +1,4 @@
+body {
 .frame {
   background-color: #3e3e3e;
   display: grid;
@@ -10,4 +11,5 @@
   background-color: #3e3e3e;
   width: 764px;
   height: 1001px;
+}
 }
