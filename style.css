@@ -2,3 +2,8 @@
 body {
   background-color: #8f8f8f; /* pick any color */
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
