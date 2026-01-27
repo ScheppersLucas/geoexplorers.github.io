@@ -1,6 +1,105 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #808080; /* pure black */
-}
+/* Base (mobile first) */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #383838;
+      color: #f0f0f0;
+    }
+
+    /* Banner */
+    .banner {
+      background-color: #d8c9a3;
+      color: #2b2b2b;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .banner h4 {
+      margin: 0;
+      font-size: 1.5rem;
+
+    }
+
+    .banner p {
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+
+    /* Content */
+    .content {
+      padding: 30px 20px;
+    }
+
+    /* Description section */
+    .description {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Image styling (FIXES THE HUGE IMAGE ISSUE) */
+    .description img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .description-text h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    .description-text p {
+      line-height: 1.6;
+      color: #cccccc;
+      margin-bottom: 0;
+    }
+
+    /* Contact section */
+    .contact {
+      background-color: #2f2f2f;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .contact h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    .contact p {
+      margin: 8px 0;
+      color: #cccccc;
+    }
+
+    /* Desktop layout */
+    @media (min-width: 768px) {
+      .description {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .description img {
+        flex: 1;
+      }
+
+      .description-text {
+        flex: 2;
+      }
+
+      .content,
+      .contact {
+        padding: 50px 10%;
+      }
+
+      .banner h1 {
+        font-size: 2.4rem;
+      }
+    }
