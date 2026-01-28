@@ -28,6 +28,13 @@
     z-index: -1;              
   }
 
+
+  .navegation {
+    background-color: #414141;
+    text-align: center;
+    
+  }
+
     /*titel banner */
 
 
@@ -39,8 +46,9 @@
     }
 
     .construction {  /*construction image */
-      width: 20%;    
-      height: auto;
+      width: 30%;       /* keep it small on desktop */
+      max-width: 80px;  /* limit the absolute size */
+      height: auto;     /* keep aspect ratio */
     }
 
     .banner h1 {
