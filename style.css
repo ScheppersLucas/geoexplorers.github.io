@@ -38,8 +38,8 @@
       text-align: center;
     }
 
-    .construction {
-      width: 30%;    /* 30% of the parent element width */
+    .construction {  /*construction image */
+      width: 20%;    
       height: auto;
     }
 
