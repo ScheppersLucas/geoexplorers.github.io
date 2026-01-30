@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #383838;
+    color: #f0f0f0;
+    min-height: 100vh;
+    position: relative; 
+    margin: 0;
+}
+
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 14px 32px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+
+  /* Glass effect */
+  background-color: rgba(20, 20, 30, 0.85);  /* stronger transparency for Safari */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  /* Force stacking context */
+  position: relative;
+}
+
+/* NAV ITEMS */
+nav ul li {
+  position: relative;
+}
+
+/* LINKS */
+nav ul li a {
+  color: #f5f7ff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 6px 4px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* HOVER TEXT LIFT */
+nav ul li a:hover {
+  color: #F5E7C6;
+  transform: translateY(-2px);
+}
+
+/* ANIMATED UNDERLINE */
+nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #F5E7C6, #FA8112);
+  transition: width 0.35s ease;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE / CURRENT PAGE */
+nav ul li.active a {
+  color: #FA8112;
+}
+
+nav ul li.active::after {
+  width: 100%;
+}
+
+/* OPTIONAL: subtle entrance animation */
+nav ul {
+  animation: navFade 0.8s ease forwards;
+}
+
+@keyframes navFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SAFARI / TOUCH DEVICES FIX */
+@media (hover: none) {
+  nav ul li a {
+    color: #f5f7ff; /* hover won’t work on touch */
+  }
+
+  nav ul li::after {
+    display: none;
+  }
+}
