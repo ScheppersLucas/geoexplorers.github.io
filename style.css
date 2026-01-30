@@ -16,11 +16,15 @@
 
     /* nav bar-----------------------------------------------*/
     nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  /* Stack context for Safari */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
 
 /* NAV LIST */
 nav ul {
@@ -33,11 +37,14 @@ nav ul {
   gap: 28px;
 
   /* Glass effect */
-  background: rgba(20, 20, 30, 0.55);
+  background-color: rgba(20, 20, 30, 0.85);  /* stronger transparency for Safari */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  /* Force stacking context */
+  position: relative;
 }
 
 /* NAV ITEMS */
@@ -102,6 +109,17 @@ nav ul {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* SAFARI / TOUCH DEVICES FIX */
+@media (hover: none) {
+  nav ul li a {
+    color: #f5f7ff; /* hover won’t work on touch */
+  }
+
+  nav ul li::after {
+    display: none;
   }
 }
 
