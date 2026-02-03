@@ -112,7 +112,7 @@ body::before {
     position: fixed;         
     inset: 0;                
     
-    background-image: url("./photos/play-field.png?v=2");
+    background-image: url("../photos/play-field.png?v=2");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
