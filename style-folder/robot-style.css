@@ -104,3 +104,18 @@ nav ul {
     display: none;
   }
 }
+
+
+body::before {
+    content: "";              
+    position: fixed;         
+    inset: 0;                
+    
+    background-image: url("./photos/play-field.png?v=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.3;            
+    z-index: -1;              
+  }
