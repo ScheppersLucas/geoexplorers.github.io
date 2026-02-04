@@ -155,6 +155,9 @@ body::before {
   
   
 }
+.content h2{
+  font-size: 3rem;
+}
 
 
 /* Mobile */
