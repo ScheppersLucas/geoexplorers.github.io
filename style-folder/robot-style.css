@@ -148,14 +148,13 @@ body::before {
     
 }
 
-.content img{
-  max-width: 80%;
+.content img {
   max-width: 450px;
-  max-height: min-content;
-  padding: 10%;
-  
-  
+  width: 100%;
+  padding: 2rem;   /* or 16px */
+  box-sizing: border-box;
 }
+
 .content h2{
   font-size: 3rem;
 }
