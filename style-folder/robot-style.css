@@ -127,8 +127,9 @@ body::before {
       padding: 30px 20px;
       text-align: center;
       margin: 0%;
-      padding: 1%;
+      padding: 0%;
       padding-top: 0px
+      
     }
     .banner h1{
       margin: 0;
@@ -136,26 +137,31 @@ body::before {
       padding-top: 20px;
     }
     .banner p{
-      font-size: 1rem;
+      font-size: 1,5rem;
+      padding-bottom: 30px;
     }
 
     .content {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
 }
 
 .content img{
-  max-width: 90%;
+  max-width: 500px;
   max-height: min-content;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-content: center;
   
 }
+
 
 /* Mobile */
 @media (max-width: 768px) {
   .content {
+    max-width: 80%;
     flex-direction: column;
     text-align: center; /* optional */
   }
