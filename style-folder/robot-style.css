@@ -139,5 +139,26 @@ body::before {
       font-size: 1rem;
     }
 
+    .content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
-    
+.content img{
+  max-width: 90%;
+  max-height: min-content;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center; /* optional */
+  }
+}
+
+
