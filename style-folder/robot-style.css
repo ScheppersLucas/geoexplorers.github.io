@@ -124,7 +124,7 @@ body::before {
       .banner {
       background-color: #F5E7C6;
       color: #2b2b2b;
-      padding: 30px 20px;
+      padding: 0px 0px;
       text-align: center;
       margin: 0%;
       padding: 0%;
@@ -149,11 +149,10 @@ body::before {
 }
 
 .content img{
-  max-width: 500px;
+  max-width: 80%;
   max-height: min-content;
-  padding-left: 10%;
-  padding-right: 10%;
-  align-content: center;
+  padding: 10%;
+  
   
 }
 
@@ -161,7 +160,7 @@ body::before {
 /* Mobile */
 @media (max-width: 768px) {
   .content {
-    max-width: 80%;
+    
     flex-direction: column;
     text-align: center; /* optional */
   }
