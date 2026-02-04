@@ -150,6 +150,7 @@ body::before {
 
 .content img{
   max-width: 80%;
+  max-width: 450px;
   max-height: min-content;
   padding: 10%;
   
@@ -157,6 +158,12 @@ body::before {
 }
 .content h2{
   font-size: 3rem;
+}
+
+.content p{
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1,5rem;
 }
 
 
