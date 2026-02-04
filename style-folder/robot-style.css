@@ -121,8 +121,6 @@ body::before {
   }
 
 
-
-
       .banner {
       background-color: #F5E7C6;
       color: #2b2b2b;
@@ -130,9 +128,16 @@ body::before {
       text-align: center;
       margin: 0%;
       padding: 1%;
-      padding-top: 70px
+      padding-top: 0px
     }
     .banner h1{
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 4rem;
+      padding-top: 20px;
     }
+    .banner p{
+      font-size: 1rem;
+    }
+
+
+    
